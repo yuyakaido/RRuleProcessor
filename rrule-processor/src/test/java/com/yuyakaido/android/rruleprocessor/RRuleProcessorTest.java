@@ -3,6 +3,7 @@ package com.yuyakaido.android.rruleprocessor;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
+import org.robolectric.annotation.Config;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -18,6 +19,7 @@ import static org.junit.Assert.assertTrue;
  * Created by yuyakaido on 9/6/15.
  */
 @RunWith(RobolectricTestRunner.class)
+@Config(manifest = Config.NONE)
 public class RRuleProcessorTest {
 
     @Test
