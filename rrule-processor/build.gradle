@@ -1,4 +1,22 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.3.4'
+    }
+}
+
+publish {
+    groupId = 'com.yuyakaido.android'
+    artifactId = 'rrule-processor'
+    publishVersion = '1.0.0'
+    uploadName = 'RRuleProcessor'
+    website = 'https://github.com/yuyakaido/RRuleProcessor'
+}
 
 android {
     compileSdkVersion 24
